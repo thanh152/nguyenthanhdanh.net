@@ -1,0 +1,45 @@
+<p class="info">
+  Công cụ này hiện đang được phát triển và chia sẻ trên <a href="https://github.com/lelinhtinh/de4js" target="_blank">Github</a>.
+  <br>Trang này đã không còn nhận được cập nhật và sửa lỗi. Vui lòng truy cập <a href="https://lelinhtinh.github.io/de4js/" target="_blank">de4js</a> để sử dụng phiên bản mới, tốt hơn.
+</p>
+<form class="wrap" name="bvDecode">
+  <h1 class="title center">Giải mã JavaScript</h1>
+  <textarea id="input" class="content" rows="7" placeholder="Nhập code bị mã hoá..."></textarea>
+  <textarea id="output"></textarea>
+  <div class="config center">
+    <label>
+      <input type="radio" value="" name="encode" checked> None</label>
+    <label>
+      <input type="radio" value="evalencode" name="encode"> Eval</label>
+    <label>
+      <input type="radio" value="_numberencode" name="encode"> _Number</label>
+    <label>
+      <input type="radio" value="arrayencode" name="encode"> Array</label>
+    <label>
+      <input type="radio" value="urlencode" name="encode"> URL Encode</label>
+    <label>
+      <input type="radio" value="p_a_c_k_e_r" name="encode"> Packer</label>
+    <label>
+      <input type="radio" value="javascriptobfuscator" name="encode"> Javascript Obfuscator</label>
+    <label>
+      <input type="radio" value="myobfuscate" name="encode"> My Obfuscate</label>
+  </div>
+  <div class="config center">
+    <label>
+      <input type="checkbox" id="beautify" name="beautify" checked> Beautify</label>
+    <label>
+      <input type="checkbox" id="highlight" name="highlight" checked> Highlight</label>
+  </div>
+  <div class="center">
+    <button id="copyjs" data-clipboard-target="#view" class="actionbtn" type="button">
+      Sao chép vào Clipboard
+    </button>
+    <button id="redecode" class="actionbtn" type="button">
+      Tiếp tục giải mã
+    </button>
+    <button id="clear" class="actionbtn" type="button">
+      Làm sạch
+    </button>
+  </div>
+  <pre id="view" class="content">Hãy chọn kiểu mã hoá phù hợp!</pre>
+</form>
